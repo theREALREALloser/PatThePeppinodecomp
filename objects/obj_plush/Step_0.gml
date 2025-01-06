@@ -10,20 +10,7 @@ else
 
 random_set_seed(irandom(2343245345));
 
-switch (state)
-{
-    case 0:
-        plushstate_idle();
-        break;
-    
-    case 1:
-        plushstate_squish();
-        break;
-    
-    case 2:
-        plushstate_dead();
-        break;
-}
+scr_plushstate();
 
 if ((mouse_check_button_pressed(mb_middle) || keyboard_check_pressed(ord("C"))) && tangible)
 {
@@ -48,7 +35,7 @@ if (y < 50)
 
 if (y > land_y && cangrav)
 {
-    state = 1;
+    state = states.squish;
     y = land_y;
     vsp = 0;
     image_index = 0;

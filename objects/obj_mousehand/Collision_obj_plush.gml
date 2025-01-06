@@ -12,7 +12,7 @@ if (obj_plush.tangible && !alreadytouching && vis_on)
             if (plush_headbox)
             {
                 global.patcount += 1;
-                obj_plush.state = 1;
+                obj_plush.state = states.squish;
                 obj_plush.image_index = 0;
                 
                 if (global.setting_playsfx)
@@ -43,7 +43,7 @@ if (obj_plush.tangible && !alreadytouching && vis_on)
             with (obj_plush)
             {
                 hp -= 1;
-                state = 1;
+                state = states.squish;
                 image_index = 0;
                 vsp = -10;
                 cangrav = true;
@@ -64,7 +64,7 @@ if (obj_plush.tangible && !alreadytouching && vis_on)
             }
             else
             {
-                obj_plush.state = 2;
+                obj_plush.state = states.dead;
             }
             
             break;

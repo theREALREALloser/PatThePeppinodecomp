@@ -1,7 +1,7 @@
 plush_init();
 plush_sfx();
 plushstates_init();
-state = 0;
+state = states.normal;
 character = 0;
 character_max = 6;
 land_y = 300;

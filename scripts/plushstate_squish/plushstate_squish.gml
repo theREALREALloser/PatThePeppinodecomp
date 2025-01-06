@@ -9,5 +9,5 @@ function plushstate_squish()
     }
     
     if (animationend())
-        state = 0;
+        state = states.normal;
 }
