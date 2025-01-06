@@ -48,7 +48,7 @@ if (y < 50)
 
 if (y > land_y && cangrav)
 {
-    state = UnknownEnum.Value_1;
+    state = 1;
     y = land_y;
     vsp = 0;
     image_index = 0;
