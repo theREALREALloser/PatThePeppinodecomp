@@ -1,0 +1,3 @@
+function plushstates_init()
+{
+}
